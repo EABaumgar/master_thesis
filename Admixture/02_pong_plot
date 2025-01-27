@@ -1,0 +1,9 @@
+## commands to plot admixture results using pong
+# https://github.com/ramachandran-lab/pong
+
+# running pong in shell
+## adapted --port 4001 as 4000 was throwing EOF error (range: 1024 - 65535)
+~/.local/bin/pong --filemap ${FILEMAP} --ind2pop ${POPFILE} --output_dir ${OUTDIR}/pong --port 4001
+
+# long version pong 
+#pong --filemap ${FILEMAP} --ind2pop ${POPFILE} --pop_names ${ORDERPOP} --color_list ${COLORS} --output_dir ${OUTDIR}
